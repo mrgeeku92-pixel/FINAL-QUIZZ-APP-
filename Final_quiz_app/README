@@ -1,0 +1,53 @@
+# **Final Project IHM📦**
+[Quiz Master]
+MVP Status: [Final product]
+
+**Group Members:** Gabriele Picavet, Axel Lupter-vidal
+
+# **🎯 Project Overview**
+
+The application QuizMaster is a PyQt5 application built using a Model-View-Controller structure. When launching the application, users enter their name, select a quiz theme, answer multiple-choice questions and see a final score with a persisted leaderboard.
+
+
+# **🚀 Quick Start (Architect Level: < 60s Setup)**
+
+1. Ensure Python 3.7+ is installed with PyQt5 support
+2. Download the "QuizMaster" folder and open it in VS Code or your preferred editor
+3. Run `main.py` to launch the application
+4. Project structure:
+   - **View**: UI screens for start, theme selection, quiz play, and results
+   - **Resources**: Icons, images, stylesheet (style.qss), and JSON files (questions and leaderboards)
+   - **Model**: Manages quiz state, loads/saves questions and leaderboards
+   - **Controller**: Handles user interactions and coordinates between Model and View
+
+# **🛠️ Technical Architecture**
+
+The code is organized into 4 main folders:
+  
+  **View**: Contains UI screens (start_view, selection_view, quiz_view, result_view). Handles user interactions and displays different pages of the application.
+  
+  **Resources**: Assets folder containing icons, images, stylesheet (style.qss), and JSON files for questions (organized by theme and difficulty level) and leaderboards.
+
+  **Model**: Manages quiz state, loads/saves questions and leaderboard JSON files. Tracks important data: username, score, current question index, answered questions, and leaderboards.
+
+  **Controller**: Processes user actions, validates answers, updates score based on difficulty level, coordinates view updates, and persists leaderboard data.
+
+Additionally, **main.py** initializes the main application window and launches the application.
+
+# **🛠️ Features**
+- Welcome screen with player name entry
+- Theme selection for quiz categories (General Knowledge, History, Science)
+- Difficulty level selection (Easy, Medium, Hard)
+- Multiple-choice questions with progress tracking
+- Difficulty-based score calculation:
+  - Easy: 5 points per correct answer
+  - Medium: 10 points per correct answer
+  - Hard: 15 points per correct answer
+- Result screen with leaderboard display
+- Leaderboard persistence to theme-specific JSON files
+
+
+
+# **📦 Dependencies**
+
+PyQt: [dealing with the platform windows]
